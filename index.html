@@ -12,21 +12,20 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
 
 <script>
-  //<![CDATA[
 function detectSpan() {
-var result = ($('span.blog-admin').css('display') == 'inline')? false: true;
+var result = ($('span.blog-admin').css('display') == 'inline')? true: false;
 console.log($('.blog-admin').css('display'));
   return result;
 }
 
-function detectDiv() {
-var result = ($('div.blog-admin').css('display') == 'inline')? false: true;
+function detectDiv() {// Undefined
+var result = ($('div.blog-admin').css('display') == 'inline')? true: false;
 console.log($('div.blog-admin').css('display'));
   return result;
 }
 
 function detectItem() {
-var result = ($('.item-control').css('display') == 'inline')? false: true;
+var result = ($('.item-control').css('display') == 'inline')? true: false;
 console.log($('.item-control').css('display'));
   return result;
 }
@@ -44,5 +43,4 @@ else{
 console.log("no admin");
 }
 };
-  //]]>
 </script>
